@@ -24,7 +24,7 @@ public class App {
         if (bulanBertahan < 1) {
             status = "PERINGATAN: Keuangan Anda kurang stabil!";
         } else if (bulanBertahan > 6) {
-            status = "Keuangan Anda dalam Kondisi aman.";
+            status = "Keuangan Anda dalam kondisi aman.";
         }
 
         boolean umur = age > 30;
@@ -43,7 +43,7 @@ public class App {
         double pembulatan = Math.ceil(rata2);
         double bonusTakTerduga = 100000 + (Math.random() * (1000000 - 100000));
 
-        double uangSetelahPengeluaran = sisaUang + bonusTakTerduga;
+        double setelahPengeluaran = sisaUang + bonusTakTerduga;
 
         System.out.println("\n==== LAPORAN KEUANGAN PRIBADI ====");
         System.out.println("Nama: " + name);
@@ -55,7 +55,7 @@ public class App {
         System.out.println("Status Keuangan: " + status);
         System.out.println("Nilai absolut dari hutang: Rp" + absolutHutang);
         System.out.println("Pengeluaran harian setelah pembulatan: Rp" + pembulatan);
-        System.out.println("Total uang yang dimiliki setelah pengeluaran dan bonus: Rp" + uangSetelahPengeluaran);
+        System.out.println("Total uang yang dimiliki setelah pengeluaran dan bonus: Rp" + setelahPengeluaran);
         System.out.println("Bonus tak terduga: Rp" + bonusTakTerduga);
 
         input.close();
